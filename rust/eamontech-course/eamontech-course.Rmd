@@ -46,10 +46,12 @@ library(rextendr)
   - Syntax declare a const is: const + LETTER_UPCASE:<datatype> = value
 
 ```{extendr}
+
 let mut x = 10;
 rprintln!("x = {}", x);
 x = 20;
 rprintln!("x = {}", x);
 const HANG_SO: u64 = 100_000_000_000;
 rprintln!("HANG SO = {}", HANG_SO); 
+
 ```
