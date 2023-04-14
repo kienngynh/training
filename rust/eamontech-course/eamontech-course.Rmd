@@ -38,13 +38,13 @@ output: md_document
 
 * Variable
   - The default variable in Rust is immutable
-  - Syntax declare a const is: const + LETTER_UPCASE:<datatype> = value
+  - Syntax declare a const is: const + LETTER_UPCASE:datatype = value
 
-```{.rust .cb-run}
-  let mut x = 10;
-  println!("x = {}", x);
-  x = 20;
-  println!("x = {}", x);
-  const HANG_SO: u64 = 100_000_000_000;
-  println!("HANG SO = {}", HANG_SO); 
+```{.rust .cb-run show=code+stdout}
+let mut x = 10;
+println!("x = {}", x);
+x = 20;
+println!("x = {}", x);
+const HANG_SO: u64 = 100_000_000_000;
+println!("HANG SO = {}", HANG_SO); 
 ```
