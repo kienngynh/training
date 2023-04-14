@@ -34,24 +34,19 @@ author: "Nguyen Huu Kien"
 output: md_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-library(rextendr)
-```
-
 # Part 1: Overview
 
 * Variable
   - Default variable in Rust is immutable
   - Syntax declare a const is: const + LETTER_UPCASE:<datatype> = value
 
-```{extendr}
+```{.rust .cb-run}
 
 let mut x = 10;
-rprintln!("x = {}", x);
+println!("x = {}", x);
 x = 20;
-rprintln!("x = {}", x);
+println!("x = {}", x);
 const HANG_SO: u64 = 100_000_000_000;
-rprintln!("HANG SO = {}", HANG_SO); 
+println!("HANG SO = {}", HANG_SO); 
 
 ```
