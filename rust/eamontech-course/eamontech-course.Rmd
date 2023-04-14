@@ -16,7 +16,7 @@ knit: (
       params =  list(title = title, sub_title = sub_title),    
       output_file = file_name)
 
-    file.copy(inputFile, file.path(format(paste("/home/tulipbk/github/kienngynh/notebooks/",type_note,sep="")), basename(format(paste(file_name,".Rmd",sep="")))),overwrite = TRUE)})
+    #file.copy(inputFile, file.path(format(paste("/home/tulipbk/github/kienngynh/notebooks/",type_note,sep="")), basename(format(paste(file_name,".Rmd",sep="")))),overwrite = TRUE)})
 
 params: 
   title:
@@ -37,16 +37,14 @@ output: md_document
 # Part 1: Overview
 
 * Variable
-  - Default variable in Rust is immutable
+  - The default variable in Rust is immutable
   - Syntax declare a const is: const + LETTER_UPCASE:<datatype> = value
 
 ```{.rust .cb-run}
-
-let mut x = 10;
-println!("x = {}", x);
-x = 20;
-println!("x = {}", x);
-const HANG_SO: u64 = 100_000_000_000;
-println!("HANG SO = {}", HANG_SO); 
-
+  let mut x = 10;
+  println!("x = {}", x);
+  x = 20;
+  println!("x = {}", x);
+  const HANG_SO: u64 = 100_000_000_000;
+  println!("HANG SO = {}", HANG_SO); 
 ```
