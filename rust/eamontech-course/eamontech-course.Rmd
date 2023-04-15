@@ -48,3 +48,26 @@ println!("x = {}", x);
 const HANG_SO: u64 = 100_000_000_000;
 println!("HANG SO = {}", HANG_SO); 
 ```
+
+* Shadowing
+  - While declaring a variable with the name is exist, the old variable doesn't disappear. It is shadowed by the new value.
+
+```{.rust .cb-run show=code+stdout}
+let outer = 10;
+{
+  let inner = 200;
+  println!("inner = {}", inner);
+  let outer = 300;
+  println!("outer = {}", outer);
+}
+  println!("outer = {}", outer);
+```
+
+* Data types
+
+| Hello | World |
+| ----- | ----- |
+|a|b
+  - Scalar data
+    
+  - Compound data
