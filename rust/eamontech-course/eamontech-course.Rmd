@@ -64,10 +64,11 @@ let outer = 10;
 ```
 
 * Data types
-
-| Hello | World |
-| ----- | ----- |
-|a|b
-  - Scalar data
-    
+  - Scalar data 
   - Compound data
+
+```rust
+fn main(){
+  println!("Hello from Rust");
+}
+```

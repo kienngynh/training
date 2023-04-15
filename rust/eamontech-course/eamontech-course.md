@@ -43,11 +43,11 @@ outer = 10
 ```
 
 -   Data types
+    -   Scalar data
+    -   Compound data
 
-  Hello   World
-  ------- -------
-  a       b
-
--   Scalar data
-
--   Compound data
+``` {.rust}
+fn main(){
+  println!("Hello from Rust");
+}
+```
