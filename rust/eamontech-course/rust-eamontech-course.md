@@ -25,7 +25,7 @@ Part 1: Overview
     -   While declaring a variable with the name is exist, the old
         variable doesn't disappear. It is shadowed by the new value.
 
-        ``` {.rust .numberLines startFrom="7"}
+        ``` {.rust .cb-run show=code+stdout}
         let outer = 10;
         {
           let inner = 200;
@@ -35,17 +35,6 @@ Part 1: Overview
         }
           println!("outer = {}", outer);
         ```
-
-        ``` {.stdout}
-        inner = 200
-        outer = 300
-        outer = 10
-        ```
 -   Data types
-
-  Hello   World
-  ------- -------
-  a       b
-
 -   Scalar data
 -   Compound data
