@@ -1,9 +1,16 @@
 fn main() {
-    let mut x = 10;
-    println!("x = {}", x);
-    x = 20;
-    println!("x = {}", x);
-
-    const HANG_SO: u64 = 100_000_000_000;
-    println!("HANG SO = {}", HANG_SO)
+    let f: f64 = 5.0;
+    let g: f32 = 4.0;
+    let sum: i32 = 2 + 10;
+    let subtract: i32 = 22 - 25;
+    let multiplication: i32 = 5 * 3;
+    let division: f64 = 192.2 / 11.6;
+    let remainder: i32 = 45 % 12;
+    println!("f = {}", f);
+    println!("g = {}", g);
+    println!("sum = {}", sum);
+    println!("subtract = {}", subtract);
+    println!("miltiplication = {}", multiplication);
+    println!("division = {}", division);
+    println!("remainder = {}", remainder);
 }
