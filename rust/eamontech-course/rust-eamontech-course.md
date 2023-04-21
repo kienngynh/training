@@ -51,4 +51,8 @@ outer = 10
 a = 111111
 ```
 
+``` rust
+println!("Hello World!")
+```
+
 ### Compound data
