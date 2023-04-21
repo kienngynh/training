@@ -1,6 +1,6 @@
 # Part 1: Overview
 
-    ## Variable
+## Variable
 
   - The default variable in Rust is immutable
 
@@ -14,8 +14,8 @@
     x = 20
     HANG SO = 100000000000
     ```
-    
-    ## Shadowing
+
+## Shadowing
 
   - While declaring a variable with the name is exist, the old variable
     doesn’t disappear. It is shadowed by the new value.
@@ -29,11 +29,11 @@
     outer = 300
     outer = 10
     ```
-    
-    ## Data types
-    
-    ### Scalar data
-    
+
+## Data types
+
+### Scalar data
+
     | Length  | Signed | Unsigned |
     | :-----: | :----: | :------: |
     |  8-Bit  |   i8   |    u8    |
@@ -43,15 +43,11 @@
     | 128-Bit |  i128  |   u128   |
     |  arch   | isize  |  usize   |
     
-
+    
     `rust numberLines let a: i32 = 111_111; println!("a = {}", a);`
     
     ``` stdout
     a = 111111
     ```
-    
-    ### Compound data
 
-  - [ ] hello
-
-  - [x] world
+### Compound data
