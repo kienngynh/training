@@ -59,7 +59,8 @@ outer = 10
 |  arch   | isize  |  usize   |
 
 ``` rust
-let a: i32 = 111_111; println!("a = {}", a);
+let a: i32 = 111_111;
+println!("a = {}", a);
 ```
 
 ``` stdout
