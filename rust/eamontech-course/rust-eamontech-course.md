@@ -48,8 +48,10 @@
 |arch|isize|usize|
 
     ``` {.rust .cb-run show=code+stdout}
-    let a: i32 = 111_111;
-    println!("a = {}", a);
+      let a: i32 = 111_111;
+      println!("a = {}", a);
     ```
 
 ### Compound data
+- [ ] hello
+- [x] world
