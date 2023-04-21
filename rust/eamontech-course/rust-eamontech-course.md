@@ -2,7 +2,7 @@
 
 ## Variable
 - The default variable in Rust is immutable
-- Syntax declare a const is: const + LETTER\_UPCASE:datatype = value
+- Syntax declare a const is: const + LETTER\_UPCASE: datatype = value
     ``` {.rust .numberLines startFrom="1"}
     let mut x = 10;
     println!("x = {}", x);
@@ -38,4 +38,18 @@
     ```
 ## Data types
 ### Scalar data
+|Length|Signed|Unsigned|
+|:----:|:----:|:------:|
+|8-Bit|i8|u8|
+|16-Bit|i16|u16|
+|32-Bit|i32|u32|
+|64-Bit|i64|u64|
+|128-Bit|i128|u128|
+|arch|isize|usize|
+
+    ``` {.rust .cb-run show=code+stdout}
+    let a: i32 = 111_111;
+    println!("a = {}", a);
+    ```
+
 ### Compound data
