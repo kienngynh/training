@@ -171,17 +171,17 @@ outer = 10
 
 # Part 2: Special features
 
-|                             | Pros                                        | Cons                                  |
-| --------------------------- | :------------------------------------------ | :------------------------------------ |
-| Garbage Collection          | No error                                    | Can’t manage memory                   |
-| (Python, Javascript,CSharp) | Low time coding                             | Long time for compile and run program |
-|                             |                                             | File has big size                     |
-| Manual manager              | Full control memory                         | Many error                            |
-| (C,C++)                     | Time for compile and run program is fastest | Long time for coding                  |
-|                             | File has very small size                    |                                       |
-| Ownership model             | Can manage memory                           | Long time for coding                  |
-| (Rust)                      | No error                                    |                                       |
-|                             | Compile and run is faster                   |                                       |
-|                             | File size if smaller                        |                                       |
+|                        | Pros                               | Cons                                  |
+| ---------------------- | :--------------------------------- | :------------------------------------ |
+| Garbage Collection     | No error                           | Can’t manage memory                   |
+| (Python, Java, CSharp) | Low time coding                    | Long time for compile and run program |
+|                        |                                    | File has big size                     |
+| Manual manager         | Full control memory                | Many error                            |
+| (C,C++)                | Compile and run program is fastest | Long time for coding                  |
+|                        | File has very small size           |                                       |
+| Ownership model        | Can manage memory                  | Long time for coding                  |
+| (Rust)                 | No error                           |                                       |
+|                        | Compile and run is faster          |                                       |
+|                        | File size is smaller               |                                       |
 
-* Stack & Heap
+  - Stack & Heap
