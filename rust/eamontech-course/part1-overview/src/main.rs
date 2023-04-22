@@ -13,4 +13,15 @@ fn main() {
     println!("miltiplication = {}", multiplication);
     println!("division = {}", division);
     println!("remainder = {}", remainder);
+    let tup = ("hello world", 1000_232_121);
+    println!("string = {:?}, integer = {:?}", tup.0, tup.1);
+    let (_string, _integer) = tup;
+    println!("string = {:?}, integer = {:?}", _string, _integer);
+    let number = [12, 45, 432];
+    println!(
+        "number 1 = {}, number 2 = {}, number 3 = {}",
+        number[0], number[1], number[2]
+    );
+    let hashing = [0; 24];
+    println!("hashing = {:?}", hashing);
 }

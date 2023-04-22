@@ -125,8 +125,8 @@ outer = 10
         let t = true;
         let f = false;
         ```
-        
-          - Character
+    
+      - Character
         
         <!-- end list -->
         
@@ -135,3 +135,38 @@ outer = 10
         ```
 
   - Compound data
+    
+      - A tuple is a data type compound with multiple scalar data in a
+        tuple
+        
+        ``` rust
+        let tup = ("hello world",1000_232_121);
+        println!("string = {:?}, integer = {:?}",tup.0,tup.1);
+        let (_string,_integer) = tup;
+        println!("string = {:?}, integer = {:?}", _string, _integer);
+        ```
+        
+        ``` stdout
+        string = "hello world", integer = 1000232121
+        string = "hello world", integer = 1000232121
+        ```
+    
+      - An array is a list that has an immutable size and a uniform data
+        type.
+        
+        ``` rust
+        let number = [12, 45, 432];
+        println!(
+            "number 1 = {}, number 2 = {}, number 3 = {}",
+            number[0], number[1], number[2]
+        );
+        let hashing = [0; 24];
+        println!("hashing = {:?}", hashing);
+        ```
+        
+        ``` stdout
+        number 1 = 12, number 2 = 45, number 3 = 432
+        hashing = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        ```
+
+# Part 2: Special features
