@@ -184,4 +184,9 @@ outer = 10
 |                        | Compile and run is faster          |                                       |
 |                        | File size is smaller               |                                       |
 
-  - Stack & Heap
+  - Ownership
+    - Stack & Heap
+    - Ownership rule
+      - Each value in Rust has an owner.
+      - There can only be one owner a a time.
+      - When the owner goes out of scope, the value will be dropped.
