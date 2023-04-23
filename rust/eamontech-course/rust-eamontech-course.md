@@ -185,9 +185,8 @@ outer = 10
 |                        | File size is smaller               |                                       |
 
   - Ownership
-    Ownership là bộ quy luật thứ sẽ giúp chương trình Rust quản lý bộ nhớ, Tất cả  các chương trình phải quản lý theo cách chúng sử dụng bộ nhớ máy tính khi chạy. Một vài ngôn ngữ lập trình có bộ thị gom rác thứ mà thường có sẽ không sử dụng quá nhiều dung lượng khi nó chạy; trong một số ngôn ngữ khác, lập trình viên phải chỉ định rõ ràng và dọp dẹp bộ nhớ. Rust sử dụng cách tiếp cận thứ ba: bộ nhớ được quản lý thông qua hệ thống ownership with bộ quy luật thứ sẽ được trình biên dịch kiểm tra. Nếu xảy ra bất cứ quy luật nào bị xung đột, chương trình sẽ không được biên dịch. Không có đặc tính nào của ownership làm chậm chương trình của bạn khi nó chạy.
-    - Stack and Heap
-    - Ownership rule
-      - Each value in Rust has an owner.
-      - There can only be one owner a a time.
-      - When the owner goes out of scope, the value will be dropped.
+      - Stack and Heap
+      - Ownership rule
+          - Each value in Rust has an owner.
+          - There can only be one owner at a time.
+          - When the owner goes out of scope, the value will be dropped.
