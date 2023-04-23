@@ -4,7 +4,6 @@ fn main() {
         let _w = 100;
         _y();
     }
-
     fn _y() {
         let mut _s = "world".to_owned();
         _s.push_str("!");
