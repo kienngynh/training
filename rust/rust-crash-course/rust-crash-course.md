@@ -24,10 +24,13 @@ rustup self uninstall
 ## Làm việc với Cargo
 
   - Cargo.toml: file cấu hình dự án
-  - 
-  - 
-  - 
-  - 
+  - \[dependencies\]: chứa các gói thư viện hoặc file nhị phân
+  - \[dev-dependencies\]: chứa các dependencies; cho việc ví dụ, test,
+    và benchmark
+  - \[build-dependencies\]: phần này có thể chỉ định các dependencies
+    của cargo khác để sử dụng trong kịch bản của dự án
+  - \[target\]: phần này được sử dụng để biên dịch chéo mã cho những mục
+    tiêu khác
   - Một số lệnh cargo:
 
 <!-- end list -->
