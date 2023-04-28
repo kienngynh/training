@@ -45,3 +45,37 @@ cargo build --release # cho phép xuất bản hồ sơ
 cargo build --test # build chương trình thử
 cargo build --bench # tạo chương trình benchmark
 ```
+
+# Chương 2
+
+## Variable
+
+``` rust
+let x = 17;
+println!("x = {}", x);
+```
+
+``` stdout
+x = 17
+```
+
+## Mutable
+
+  - Trong ngôn ngữ Rust, khi khai báo một biến thì biến đó mặc định được
+    coi là bất biến, giá trị của biến đó không thể thay đổi.
+  - Để cho biết biến đó là biến có thể thay đổi giá trị, cần thêm mut ở
+    trước tên biến.
+
+<!-- end list -->
+
+``` rust
+let mut x = 26;
+println!("x = {}", x);
+x = 11;
+println!("x = {}", x);
+```
+
+``` stdout
+x = 26
+x = 11
+```
