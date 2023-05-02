@@ -137,4 +137,22 @@ println!("{} {} {}",x,y,z);
 ```
 
 3.  Boolean
+
+<!-- end list -->
+
+  - Kiểu dữ liệu boolean chứa 2 giá trị: true hoặc false và có một byte
+    dung lượng, thường được sự dụng trong mệnh đề điều kiện…
+
+<!-- end list -->
+
+``` rust
+let t = true;
+let f:bool = false;
+println!("{} {}",t,f);
+```
+
+``` stdout
+true false
+```
+
 4.  Characters
