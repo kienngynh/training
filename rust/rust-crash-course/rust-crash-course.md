@@ -48,7 +48,7 @@ cargo build --bench # tạo chương trình benchmark
 
 # Chương 2
 
-## Variable
+## Variables
 
 ``` rust
 let x = 17;
@@ -59,7 +59,7 @@ println!("x = {}", x);
 x = 17
 ```
 
-## Mutable
+## Mutability
 
   - Trong ngôn ngữ Rust, khi khai báo một biến thì biến đó mặc định được
     coi là bất biến, giá trị của biến đó không thể thay đổi.
@@ -79,3 +79,62 @@ println!("x = {}", x);
 x = 26
 x = 11
 ```
+
+## Kiểu dữ liệu
+
+  - Do là một ngôn ngữ lập trình tĩnh nên tại thời điểm biên dịch, Rust
+    phải biết kiểu dữ liệu của biến
+  - Có hai dạng dữ liệu chính trong Rust: Scalar và Compound.
+
+<!-- end list -->
+
+``` rust
+let y:u32 = "10".parse().unwrap();
+println!("{}",y);
+```
+
+``` stdout
+10
+```
+
+### Scalar data types
+
+1.  Integer
+
+<!-- end list -->
+
+  - Số nguyên là đại diện cho các số không có phân số. Có nhiều cách
+    khác nhau để đại diện cho số nguyên trong Rust, tuỳ thuộc vào số
+    lượng bit có dấu hoặc không có dấu
+
+| Số lượng bit          | Có dấu       | Không dấu |
+| :-------------------- | :----------- | :-------- |
+| 8-bit                 | i8           | u8        |
+| 16-bit                | i16          | u16       |
+| 32-bit                | i32(default) | u32       |
+| 64-bit                | i64          | u64       |
+| 128-bit               | i128         | u128      |
+| architecture-specific | isize        | usize     |
+
+2.  Floating-point
+
+<!-- end list -->
+
+  - Trong Rust có cung cấp kiểu dữ liệu f32 và f64(mặc định) để chứa số
+    thập phân
+
+<!-- end list -->
+
+``` rust
+let x: f64 = 3.0;
+let y = 3.0f64;
+let z = 3.0 as f64;
+println!("{} {} {}",x,y,z);
+```
+
+``` stdout
+3 3 3
+```
+
+3.  Boolean
+4.  Characters
